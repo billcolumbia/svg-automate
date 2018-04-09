@@ -1,0 +1,15 @@
+{
+  "name": "svg-factory",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "svg": "svgo -f ./icons/src -o ./icons/dist",
+    "sprite": "svgstore -o ./icons/dist/sprite.svg ./icons/dist/*.svg --inline"
+  },
+  "dependencies": {
+    "jsdom": "^11.6.2",
+    "svgo": "^1.0.4",
+    "svgstore-cli": "^1.3.1"
+  }
+}
